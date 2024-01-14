@@ -4,8 +4,7 @@ class Food {
   private $name;
   private $price;
 
-  public function show_price(int $price) {
-    $this->price = $price;
+  public function show_price() {
     echo $this->price . '<br>';
   }
 
@@ -21,8 +20,7 @@ class Animal {
   private $height;
   private $weight;
 
-  public function show_height(int $height) {
-    $this->height = $height;
+  public function show_height() {
     echo $this->height . '<br>';
   }
 
@@ -44,8 +42,8 @@ print_r($dog);
 echo '<br>';
 
 // メソッドにアクセスし、値を代入する
-$potato->show_price(250);
-$dog->show_height(60);
+$potato->show_price();
+$dog->show_height();
 
 ?>
 
